@@ -3,15 +3,15 @@ import math
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
-#num_1 = int(input ("Digite um número: "))
-#num_2 = int(input ("Digite um número: "))
-#sum = num_1 + num_2
-#print(f"A soma dos valores é {sum}")
+# num_1 = int(input ("Digite um número: "))
+# num_2 = int(input ("Digite um número: "))
+# sum = num_1 + num_2
+# print(f"A soma dos valores é {sum}")
 
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
-#num_1 = int(input ("Digite um número: "))
-#div = num_1 % 5
-#print(f"O resto da divisão é {div}")
+# num_1 = int(input ("Digite um número: "))
+# div = num_1 % 5
+# print(f"O resto da divisão é {div}")
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 
@@ -44,11 +44,11 @@ import math
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
 
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
-data = str(input("Digite uma data no formato dd/mm/aaaa: "))
-data_separada = data.split("/")
-print (f"Dia: {data_separada[0]}")
-print (f"Mês: {data_separada[1]}")
-print (f"Ano: {data_separada[2]}")
+# data = str(input("Digite uma data no formato dd/mm/aaaa: "))
+# data_separada = data.split("/")
+# print (f"Dia: {data_separada[0]}")
+# print (f"Mês: {data_separada[1]}")
+# print (f"Ano: {data_separada[2]}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
 # nome1 = str(input("Digite alguma coisa: "))
@@ -67,6 +67,15 @@ print (f"Ano: {data_separada[2]}")
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+try:
+
+    temperatura = (int(input("Digite um valor de temperatura em Celsius: ")))
+    fahrenheit = ((temperatura*9/5) + 32)
+    print(f"{fahrenheit:.2f}º fahrenheit")
+
+except ValueError:
+    print("Favor digite um valor inteiro")
 # 22: Verificador de Palíndromo
 # 23: Calculadora Simples
 # 24: Classificador de Números
